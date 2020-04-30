@@ -812,22 +812,32 @@
 
 .sec5 .sendbutton {
     background: #000;
-    
 }
 
 .sec5 .contact-button {position: absolute; top: 100%; left: 55%; transform: translate(-50%,-50%);}
-.sec5 .contact-button .btn1 {
-    position: absolute; top: 100%; right: 0%; z-index: 8000;
+.sec5 .contact-button .btn {
+    position: absolute; top: 100%; right: 0%;
+    width: 121px; height: 121px;
+
+}
+.sec5 .contact-button .btn .btn1 {
+    position: absolute; top: 0%; right: 0%; z-index: 100;
     width: 121px; height: 121px;
     z-index: 200;
 }
+.sec5 .contact-button .btn .more-dot {
+    width: .4cm; height: .4cm; background-color: #ffca55; border-radius: 50%; z-index: 9999; 
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);}
 .sec5 .contact-button .btn2 {
-    position: absolute; top: 100%; right: 0%; z-index: 8000;
+    position: absolute; top: 100%; right: 0%; z-index: 100;
     width: 121px; height: 121px;
     z-index: 200;
 }
-.sec5 .contact-button .btn3 {position: absolute; right: 50%; z-index: 8000;}
-.sec5 .contact-button .btn4 {position: absolute;  right: 50%; z-index: 8000;}
+.sec5 .contact-button .btn3 {position: absolute; right: 50%; z-index: 500;}
+.sec5 .contact-button .btn4 {position: absolute;  right: 50%; z-index: 500;}
 
 
 /* contact-form animation */
@@ -851,7 +861,8 @@
 .sec5 .form-top .form-top-l input {opacity: 0; transition: opacity .4s 1.8s cubic-bezier(.7,0,.3,1)}
 .sec5 .form-top .form-top-r input  {opacity: 0; transition: opacity .4s 1.8s cubic-bezier(.7,0,.3,1)}
 .sec5 .form-bottom input {opacity: 0; transition: opacity .4s 1.8s cubic-bezier(.7,0,.3,1)}
-.sec5 .contact-button {opacity: 0;  transition: opacity .4s 2.3s cubic-bezier(.7,0,.3,1)}
+.sec5 .contact-button {opacity: 0;  transition: opacity .4s 2.3s cubic-bezier(.7,0,.3,1);}
+
 
 .sec5.show .form-top .form-top-l::before {opacity: 1; width: 100%;}
 .sec5.show .form-top .form-top-r::before {opacity: 1; width: 100%;}
