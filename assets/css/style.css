@@ -439,6 +439,7 @@
 .label-wrap:nth-child(8) .label .label-tit .label-tit-left {margin-left: 30%; text-align: right;}
 .label-wrap:nth-child(6) .label .label-tit .label-tit-left {margin-left: 50%;}
 .label-wrap:nth-child(3) .label .label-tit .label-tit-right {margin-left: 20%;}
+.label-wrap:nth-child(5) .label .label-tit .label-tit-right {margin-left: 30%;}
 .label-wrap:nth-child(7) .label .label-tit .label-tit-right {margin-left: 50%;}
 .label-wrap:nth-child(8) .label .label-tit .label-tit-right {margin-left: 0%;}
 .pimg-wrap {
