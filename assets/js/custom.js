@@ -34,6 +34,11 @@ $(function(){
     //alert(text)
     $(".label-tit").eq(5).find(".label-tit-left").html(text7);
 
+    let text8 = $(".label-tit").eq(6).find(".label-tit-left").text().split("").join("</span><span>");
+    text8 = "<span>" + text8 + "</span>"
+    //alert(text)
+    $(".label-tit").eq(6).find(".label-tit-left").html(text8);
+
 
     $(window).scroll(function () {
         var wScroll = parseInt($(this).scrollTop());
@@ -78,6 +83,11 @@ $(function(){
             $(".label-wrap").eq(5).addClass("show");
             $(".pimg-wrap6").addClass("show");
             $(".more").eq(5).addClass("show");
+        }
+        if(wScroll >= $(".label").eq(6).offset().top - $(window).height() / 2){
+            $(".label-wrap").eq(6).addClass("show");
+            $(".pimg-wrap7").addClass("show");
+            $(".more").eq(6).addClass("show");
         }
         if(wScroll >= $(".sec5").offset().top - $(window).height() / 2){
             $(".sec5").addClass("show");
